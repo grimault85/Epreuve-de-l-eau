@@ -1,0 +1,13 @@
+function combination3digits() {
+    for (let i = 0; i <= 9; i++) {
+        for (let j = i + 1; j <= 9; j++) {
+            for (let k = j + 1; k <= 9; k++) {
+                if (i !== j && i !== k && j !== k) {
+                    console.log(`${i}${j}${k}`);
+                }
+            }
+        }
+    }
+}
+
+combination3digits()
